@@ -12,6 +12,7 @@
     "webpack": "^4.30.0"
   },
   "devDependencies": {
+    "file-loader": "^3.0.1",
     "webpack-cli": "^3.3.2"
   }
 }
