@@ -11,6 +11,11 @@ module.exports = {
       use: {
         loader: 'file-loader'
       }
+    },{
+      test: /\.vue$/,
+      use: {
+        loader: 'vue-loader'
+      }
     }]
   },
   output: {
