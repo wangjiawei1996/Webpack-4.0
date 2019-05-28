@@ -4,10 +4,12 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 module.exports = {
   mode: 'development',
   devtool: 'cheap-module-eval-source-map',
-  // mode: 'production',
-  // devtool: 'cheap-module-source-map',
   entry: {
     main: './src/index.js'
+  },
+  devServer: {
+    contentBase: './dist',
+    open: true
   },
   module: {
     rules: [{
@@ -44,6 +46,7 @@ module.exports = {
     template: 'src/index.html'
   }),new CleanWebpackPlugin()],
   output: {
+    publicPath: '/',
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist')
   }

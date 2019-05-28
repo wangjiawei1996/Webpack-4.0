@@ -12,6 +12,6 @@
 // var root = document.getElementById('root');
 // import './index.scss'
 // root.innerHTML='<div class="iconfont iconWIFI"></div>';
-consele.log('hello world')
+console.log('hello world! Anthony!!!!!!')
 
 
