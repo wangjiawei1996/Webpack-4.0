@@ -1,3 +1,5 @@
+// import test from './test'
+// console.log(test.name)
 import _ from 'lodash'
 var element = document.createElement('div')
 element.innerHTML = _.join(['Jia', 'Wei'],'-');

@@ -68,7 +68,11 @@ module.exports = {
           priority: -10,
           filename: 'vendors.js',
         },
-        default: false
+        default: {
+          priority: -20,
+          reuseExistingChunk: true,
+          filename: 'common.js'
+        }
       }
     }
   },
