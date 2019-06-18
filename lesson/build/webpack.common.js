@@ -36,12 +36,18 @@ module.exports = {
   optimization: {
     usedExports: true,
     splitChunks: {
-      chunks: "all"
+      chunks: "all",
+      cacheGroups: {
+        vendors: {
+          test: /[\\/]node_modules[\\/]/,
+          priority: -10,
+          name: 'vendors'
+        }
+      }
     }
   },
+  performance: false,
   output: {
-    filename: '[name].js',
-    chunkFilename: '[name].chunk.js',
     path: path.resolve(__dirname, '../dist')
   }
 }
