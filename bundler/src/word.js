@@ -1,2 +1,1 @@
-const word = 'hello';
-export default word;
+export const word = 'hello';
